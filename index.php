@@ -9,13 +9,13 @@ $databasemanager=new MysqlManager();
 //$Keyword=$wechatObj->GetKeyWord();
 if($Keyword=='开灯')
 {
-	$databasemanager->UpdateSwitchState(1);
+	//$databasemanager->UpdateSwitchState(1);
 	$wechatObj->responseMsg("灯马上就开");
 }
 else if($Keyword=='关灯')
 {
 
-	$databasemanager->UpdateSwitchState(0);	
+	//$databasemanager->UpdateSwitchState(0);	
 	$wechatObj->responseMsg("灯马上就关");
 }
 else
