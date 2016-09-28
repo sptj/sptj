@@ -5,8 +5,8 @@ include('MysqlDataBase.php');
 $wechatObj = new wechatCallbackapiTest();
 $databasemanager=new MysqlManager();
 //$wechatObj->valid();
-$wechatObj->MsgAnalyse();
-$Keyword=$wechatObj->GetKeyWord();
+//$wechatObj->MsgAnalyse();
+//$Keyword=$wechatObj->GetKeyWord();
 if($Keyword=='开灯')
 {
 	$databasemanager->UpdateSwitchState(1);
