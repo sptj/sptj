@@ -4,12 +4,11 @@ include('WeChatCallBackAPI.php');
 include('MysqlDataBase.php');
 $wechatObj = new wechatCallbackapiTest();
 $databasemanager=new MysqlManager();
-$wechatObj->valid();
+//$wechatObj->valid();
 $wechatObj->MsgAnalyse();
 $Keyword=$wechatObj->GetKeyWord();
 if($Keyword=='开灯')
 {
-
 	$databasemanager->UpdateSwitchState(1);
 	$wechatObj->responseMsg("灯马上就开");
 }
