@@ -23,7 +23,7 @@ else
 	$wechatObj->responseMsg('对不起，仅能识别“开灯”，“关灯”这两个关键词~');
 }
 
-$databasemanager->CloseConnect();
+//$databasemanager->CloseConnect();
 
 ?>
 
