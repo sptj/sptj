@@ -8,21 +8,21 @@ $wechatObj->valid();
 $wechatObj->MsgAnalyse();
 $Keyword=$wechatObj->GetKeyWord();
 echo "哈哈";
-// if($Keyword=='开灯')
-// {
+ if($Keyword=='开灯')
+ {
 	// //$databasemanager->UpdateSwitchState(1);
-	// $wechatObj->responseMsg("灯马上就开");
-// }
-// else if($Keyword=='关灯')
-// {
+	 $wechatObj->responseMsg("灯马上就开");
+ }
+ else if($Keyword=='关灯')
+{
 
 	// //$databasemanager->UpdateSwitchState(0);	
-	// $wechatObj->responseMsg("灯马上就关");
-// }
-// else
-// {
-	// $wechatObj->responseMsg('对不起，仅能识别“开灯”，“关灯”这两个关键词~');
-// }
+	 $wechatObj->responseMsg("灯马上就关");
+ }
+ else
+ {
+	 $wechatObj->responseMsg('对不起，仅能识别“开灯”，“关灯”这两个关键词~');
+}
 
 //$databasemanager->CloseConnect();
 
