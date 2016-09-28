@@ -2,11 +2,11 @@
 header("Content-Type:text/html; charset=utf-8");
 include('WeChatCallBackAPI.php');
 include('MysqlDataBase.php');
-// $wechatObj = new wechatCallbackapiTest();
-// $databasemanager=new MysqlManager();
-//$wechatObj->valid();
-//$wechatObj->MsgAnalyse();
-//$Keyword=$wechatObj->GetKeyWord();
+$wechatObj = new wechatCallbackapiTest();
+$databasemanager=new MysqlManager();
+$wechatObj->valid();
+$wechatObj->MsgAnalyse();
+$Keyword=$wechatObj->GetKeyWord();
 echo "哈哈";
 // if($Keyword=='开灯')
 // {
