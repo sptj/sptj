@@ -7,7 +7,6 @@ $wechatObj = new wechatCallbackapiTest();
 $wechatObj->valid();
 $wechatObj->MsgAnalyse();
 $Keyword=$wechatObj->GetKeyWord();
-echo "哈哈";
  if($Keyword=='开灯')
  {
 	// //$databasemanager->UpdateSwitchState(1);
