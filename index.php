@@ -1,5 +1,5 @@
 <?php
-header("Content-Type:text/html; charset=utf-8");
+//header("Content-Type:text/html; charset=utf-8");
 include('WeChatCallBackAPI.php');
 //include('MysqlDataBase.php');
 $wechatObj = new wechatCallbackapiTest();
