@@ -21,7 +21,7 @@ else if($Keyword=='关灯')
 }
 else
 {
-	$wechatObj->responseMsg("暂时不支持此指令");	
+	$wechatObj->responseMsg("没有此指令");	
 }
 //$databasemanager->CloseConnect();
 
