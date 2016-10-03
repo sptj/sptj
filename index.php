@@ -19,7 +19,10 @@ else if('关灯')
 	//$databasemanager->UpdateSwitchState(0);	
 	$wechatObj->responseMsg("灯未开");
 }
-
+else
+{
+	$wechatObj->responseMsg("暂时不支持此指令");	
+}
 //$databasemanager->CloseConnect();
 
 ?>
