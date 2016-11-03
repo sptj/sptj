@@ -17,7 +17,7 @@ else if($Keyword=='关灯')
 {
 
 	//$databasemanager->UpdateSwitchState(0);	
-	$wechatObj->responseMsg("灯未开");
+	$wechatObj->responseMsg("就不关");
 }
 else
 {
